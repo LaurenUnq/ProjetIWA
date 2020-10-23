@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b21270f9-0048-403a-8f55-25da3078a1d2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="projetIWA" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="projetIWA" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="projetIWA" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1j5WYWbKj5yjcV8gPf27evxFXFY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Shelf.Project.Settings" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager" selected="Gradle.projetIWA [bootRun]">
+    <configuration name="projetIWA [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DB_PASSWORD" value="Aishiraa71" />
+            <entry key="DB_URL" value="jdbc:postgresql://localhost:5432/covid_alert_db" />
+            <entry key="DB_USER" value="postgres" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="-Dspring.profiles.active=dev" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="projetIWA [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjetIwaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="projetIWA.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.projetIWA.ProjetIwaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/covid_alert_db" />
+        <env name="DB_USER" value="postgres" />
+        <env name="DB_PASSWORD" value="Aishiraa71" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.projetIWA [bootRun]" />
+      <item itemvalue="Gradle.projetIWA [build]" />
+      <item itemvalue="Spring Boot.ProjetIwaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.projetIWA [bootRun]" />
+        <item itemvalue="Gradle.projetIWA [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../blackjack-polytech" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b21270f9-0048-403a-8f55-25da3078a1d2" name="Default Changelist" comment="" />
+      <created>1603094489103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603094489103</updated>
+      <workItem from="1603094529709" duration="126000" />
+      <workItem from="1603094680415" duration="7335000" />
+      <workItem from="1603197012172" duration="4161000" />
+      <workItem from="1603441977028" duration="1878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="90" key="#Assign_Data_Sources" timestamp="1603098268459">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#Assign_Data_Sources/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603098268459" />
+    <state x="361" y="90" key="#Project_Structure" timestamp="1603099356749">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#Project_Structure/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603099356749" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603200938238">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200938238" />
+    <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1603443036970">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603098342332" />
+    <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1603443036970" />
+    <state x="503" y="194" key="EnvironmentVariablesDialog" timestamp="1603200730142">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="503" y="194" key="EnvironmentVariablesDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200730142" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1603094658350">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603094658350" />
+    <state width="1557" height="339" key="GridCell.Tab.0.bottom" timestamp="1603443873662">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1557" height="339" key="GridCell.Tab.0.center" timestamp="1603443873662">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1557" height="339" key="GridCell.Tab.0.left" timestamp="1603443873662">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1557" height="339" key="GridCell.Tab.0.right" timestamp="1603443873662">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1603109368273">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1603109368273">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1603109368273">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1603109368273">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
+    <state x="249" y="6" key="SettingsEditor" timestamp="1603099979447">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="6" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603099979447" />
+    <state x="484" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1603441978188">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603198290201" />
+    <state x="484" y="267" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1603441978188" />
+  </component>
+</project>
