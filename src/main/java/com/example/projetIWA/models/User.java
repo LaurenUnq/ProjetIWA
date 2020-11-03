@@ -25,14 +25,7 @@ public class User {
 
     private String email;
 
-/*
-    @NotNull
-    private String username;
-*/
-/*
-    @NotNull
     private String password;
-*/
 
     @ManyToMany
     @JoinTable(name="user_locations",
@@ -44,12 +37,29 @@ public class User {
     @JoinTable(name="user_notifications",
             joinColumns = @JoinColumn(name="id"),
             inverseJoinColumns = @JoinColumn(name="notification_id"))
-    private List<Location> notifications;
+    private List<Notification> notifications;
+
 
     /* SETTER & GETTER */
 
     public String getUser_id() {
         return id;
+    }
+
+    public List<Location> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(List<Location> locations) {
+        this.locations = locations;
+    }
+
+    public List<Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List<Notification> notifications) {
+        this.notifications = notifications;
     }
 
     public void setUser_id(String user_id) {

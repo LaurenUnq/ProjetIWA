@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com/example/projetIWA/models/VerificationToken.java
  com.example.projetIWA.models.VerificationToken
 com/example/projetIWA/controllers/NotificationsController.java
@@ -8,10 +9,33 @@ com/example/projetIWA/ProjetIwaApplication.java
  com.example.projetIWA.ProjetIwaApplication
 com/example/projetIWA/repositories/LocationRepository.java
  com.example.projetIWA.repositories.LocationRepository
+=======
+com/example/projetIWA/repositories/UserRepository.java
+ com.example.projetIWA.repositories.UserRepository
+>>>>>>> a4e4002... add get notifications / get number of notification for users
 com/example/projetIWA/models/Location.java
  com.example.projetIWA.models.Location
+com/example/projetIWA/controllers/HomeController.java
+ com.example.projetIWA.controllers.HomeController
+com/example/projetIWA/ProjetIwaApplication.java
+ com.example.projetIWA.ProjetIwaApplication
+com/example/projetIWA/repositories/LocationRepository.java
+ com.example.projetIWA.repositories.LocationRepository
+com/example/projetIWA/models/User.java
+ com.example.projetIWA.models.User
+com/example/projetIWA/services/UsersServices.java
+ com.example.projetIWA.services.UsersServices
+com/example/projetIWA/controllers/LocationsController.java
+ com.example.projetIWA.controllers.LocationsController
+com/example/projetIWA/services/LocationsService.java
+ com.example.projetIWA.services.LocationsService
+com/example/projetIWA/repositories/NotificationRepository.java
+ com.example.projetIWA.repositories.NotificationRepository
+com/example/projetIWA/controllers/UsersController.java
+ com.example.projetIWA.controllers.UsersController
 com/example/projetIWA/models/Notification.java
  com.example.projetIWA.models.Notification
+<<<<<<< HEAD
 com/example/projetIWA/controllers/LocationsController.java
  com.example.projetIWA.controllers.LocationsController
 com/example/projetIWA/controllers/UsersController.java
@@ -34,3 +58,9 @@ com/example/projetIWA/SecurityConfig.java
  com.example.projetIWA.SecurityConfig
 com/example/projetIWA/controllers/CustomUserAttrController.java
  com.example.projetIWA.controllers.CustomUserAttrController
+=======
+com/example/projetIWA/services/NotificationsService.java
+ com.example.projetIWA.services.NotificationsService
+com/example/projetIWA/controllers/NotificationsController.java
+ com.example.projetIWA.controllers.NotificationsController
+>>>>>>> a4e4002... add get notifications / get number of notification for users

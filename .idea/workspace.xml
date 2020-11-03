@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b21270f9-0048-403a-8f55-25da3078a1d2" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/CustomUserAttrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/CustomUserAttrController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/WebController.java" afterDir="false" />
@@ -35,6 +36,25 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/UsersServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> bfaeb58... create service architecture
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/NotificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" afterDir="false" />
+>>>>>>> a4e4002... add get notifications / get number of notification for users
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,11 +396,12 @@
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200938238" />
     <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604417096717" />
-    <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1603443036970">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state x="718" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1604421006592">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603098342332" />
     <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1603443036970" />
+    <state x="718" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604421006592" />
     <state x="629" y="234" key="EnvironmentVariablesDialog" timestamp="1604417095988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -391,6 +412,7 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603094658350" />
+<<<<<<< HEAD
     <state width="1637" height="322" key="GridCell.Tab.0.bottom" timestamp="1604949861227">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
@@ -425,6 +447,34 @@
     <state width="1637" height="322" key="GridCell.Tab.0.right/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604949861227" />
     <state width="1635" height="449" key="GridCell.Tab.1.bottom" timestamp="1604927857716">
       <screen x="1920" y="26" width="1680" height="1050" />
+=======
+    <state width="1877" height="304" key="GridCell.Tab.0.bottom" timestamp="1604422251211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
+    <state width="1877" height="304" key="GridCell.Tab.0.center" timestamp="1604422251211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
+    <state width="1877" height="304" key="GridCell.Tab.0.left" timestamp="1604422251211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
+    <state width="1877" height="304" key="GridCell.Tab.0.right" timestamp="1604422251211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
+    <state width="1557" height="339" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+    <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1603109368273">
+      <screen x="0" y="0" width="1536" height="864" />
+>>>>>>> a4e4002... add get notifications / get number of notification for users
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
     <state width="1344" height="258" key="GridCell.Tab.1.bottom/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604520389976" />
@@ -461,10 +511,17 @@
     </state>
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603198290201" />
     <state x="484" y="267" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1603441978188" />
+<<<<<<< HEAD
     <state x="2428" y="338" key="com.intellij.ide.util.TipDialog/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604936124182" />
     <state x="2423" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1604948430891">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state x="2423" y="253" width="672" height="678" key="search.everywhere.popup/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604948430891" />
+=======
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604421031788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604421031788" />
+>>>>>>> a4e4002... add get notifications / get number of notification for users
   </component>
 </project>
