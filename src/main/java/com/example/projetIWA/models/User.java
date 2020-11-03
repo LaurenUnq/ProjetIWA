@@ -28,9 +28,6 @@ public class User {
     private String phone_number;
 
     @NotNull
-    private String username;
-
-    @NotNull
     private String password;
 
     @ManyToMany
@@ -43,9 +40,26 @@ public class User {
     @JoinTable(name="user_notifications",
             joinColumns = @JoinColumn(name="user_id"),
             inverseJoinColumns = @JoinColumn(name="notification_id"))
-    private List<Location> notifications;
+    private List<Notification> notifications;
+
 
     /* SETTER & GETTER */
+
+    public List<Location> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(List<Location> locations) {
+        this.locations = locations;
+    }
+
+    public List<Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List<Notification> notifications) {
+        this.notifications = notifications;
+    }
 
     public long getUser_id() {
         return user_id;
@@ -85,14 +99,6 @@ public class User {
 
     public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getPassword() {

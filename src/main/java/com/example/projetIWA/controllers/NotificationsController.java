@@ -4,6 +4,7 @@ import com.example.projetIWA.models.Location;
 import com.example.projetIWA.models.Notification;
 import com.example.projetIWA.repositories.LocationRepository;
 import com.example.projetIWA.repositories.NotificationRepository;
+import com.example.projetIWA.services.NotificationsService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,52 +13,44 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/notifications")
+@RequestMapping("notifications")
 public class NotificationsController {
 
-    // route get my notif
-    // route senf notif (if i am positive)
+    // route send notif (if i am positive)
 
     @Autowired
     private NotificationRepository notificationRepository;
 
+    @Autowired
+    private NotificationsService notificationsService;
+
+    /**
+     * get all notifications of given user id
+     * @param id - the user's id
+     * @return the user's notification list
+     */
     @GetMapping
-    //Get toutes les locations
-    public List<Notification> list() {
-        return notificationRepository.findAll();
+    @RequestMapping("user/{id}")
+    public List<Notification> getAllNotifications(@PathVariable Long id) {
+        return notificationsService.getAllNotificationByUserId(id);
     }
 
-    //get la location correspondant à tel id
+    /**
+     * get the number of notifications for given user id which are not viewed
+     * @param id - the user's id
+     * @return the number of user's notification which are not viewed
+     */
     @GetMapping
-    @RequestMapping("{id}")
-    public Notification get(@PathVariable Long id) {
-        return notificationRepository.getOne(id);
+    @RequestMapping("user/{id}/notViewed")
+    public long getNumberNotificationsNotViewedByUserId(@PathVariable Long id) {
+        return notificationsService.getNumberNotificationNotViewedByUserId(id);
     }
 
 
-    //creer une location
+    //creer une notification TODO
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Notification create(@RequestBody final Notification notification) {
         return  notificationRepository.saveAndFlush(notification);
-    }
-
-    //delete une location
-    @RequestMapping(value = "{id}",method = RequestMethod.DELETE)
-    public void delete(@PathVariable Long id) {
-        // Toujours verifier s'il faut supprimer aussi
-        // les enregistrements enfants
-        notificationRepository.deleteById(id);
-    }
-
-    //Update une location
-    @RequestMapping(value="{id}",method = RequestMethod.PUT)
-    public Notification update(@PathVariable Long id, @RequestBody Notification notification) {
-        // TODO: Ajouter ici une validation si tous
-        // les champs ont ete passes
-        // Sinon, retourner une erreur 400 (Bad Payload)
-        Notification existingNotification = notificationRepository.getOne(id);
-        BeanUtils.copyProperties(notification,existingNotification,"notification_id");
-        return notificationRepository.saveAndFlush(existingNotification);
     }
 }

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Entity(name="notifications")
@@ -20,10 +21,10 @@ public class Notification {
     private String description;
 
     @NotNull
-    private String viewed;
+    private Boolean viewed;
 
     @NotNull
-    private String notification_date;
+    private Date notification_date;
 
     @ManyToMany(mappedBy = "notifications")
     @JsonIgnore // Pour ne pas produire des cycles
@@ -45,19 +46,19 @@ public class Notification {
         this.description = description;
     }
 
-    public String getViewed() {
+    public Boolean getViewed() {
         return viewed;
     }
 
-    public void setViewed(String viewed) {
+    public void setViewed(Boolean viewed) {
         this.viewed = viewed;
     }
 
-    public String getNotification_date() {
+    public Date getNotification_date() {
         return notification_date;
     }
 
-    public void setNotification_date(String notification_date) {
+    public void setNotification_date(Date notification_date) {
         this.notification_date = notification_date;
     }
 }
