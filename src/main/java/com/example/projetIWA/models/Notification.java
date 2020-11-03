@@ -14,7 +14,7 @@ public class Notification {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long user_id;
+    private long notification_id;
 
     @NotNull
     private String description;
@@ -29,12 +29,12 @@ public class Notification {
     @JsonIgnore // Pour ne pas produire des cycles
     private List<User> users;
 
-    public long getUser_id() {
-        return user_id;
+    public long getNotification_id() {
+        return notification_id;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setNotification_id(long user_id) {
+        this.notification_id = user_id;
     }
 
     public String getDescription() {

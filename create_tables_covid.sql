@@ -20,5 +20,19 @@ CREATE TABLE user_locations
     location_id integer NOT NULL REFERENCES locations (location_id)
 );
 
+
+CREATE TABLE notifications(
+    notification_id serial PRIMARY KEY,
+    description varchar(100) NOT NULL,
+    viewed boolean not null default false,
+    notification_date timestamp without time zone NOT NULL
+);
+
+CREATE TABLE user_notifications(
+    user_id integer NOT NULL REFERENCES users (user_id),
+    notification_id integer NOT NULL REFERENCES locations (location_id)
+);
+
+
 INSERT INTO users(first_name,last_name,email,phone_number,password) VALUES('Tom','Robinson','tom.rob@yopmail.com','+15103754657','123456');
 INSERT INTO locations(latitude,longitude,location_date) VALUES(43.63746472422702,3.8409670228559136,now());

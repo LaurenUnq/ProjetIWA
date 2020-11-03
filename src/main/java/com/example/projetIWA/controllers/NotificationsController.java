@@ -15,6 +15,8 @@ import java.util.List;
 @RequestMapping("api/v1/notifications")
 public class NotificationsController {
 
+    // route get my notif
+    // route senf notif (if i am positive)
 
     @Autowired
     private NotificationRepository notificationRepository;
