@@ -3,13 +3,38 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b21270f9-0048-403a-8f55-25da3078a1d2" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/CustomUserAttrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/CustomUserAttrController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/WebController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/external.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/external.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo.html" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/LocationsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/UsersServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> bfaeb58... create service architecture
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,9 +321,13 @@
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+=======
+            <State />
+>>>>>>> bfaeb58... create service architecture
           </value>
         </entry>
       </map>
@@ -313,6 +342,7 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#Project_Structure/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603099356749" />
+<<<<<<< HEAD
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604661741804">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -340,6 +370,23 @@
     <state x="503" y="194" key="EnvironmentVariablesDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200730142" />
     <state x="629" y="234" key="EnvironmentVariablesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604341651854" />
     <state x="97" y="241" key="EnvironmentVariablesDialog/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604661740810" />
+=======
+    <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604417096717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200938238" />
+    <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604417096717" />
+    <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1603443036970">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603098342332" />
+    <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1603443036970" />
+    <state x="629" y="234" key="EnvironmentVariablesDialog" timestamp="1604417095988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="503" y="194" key="EnvironmentVariablesDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200730142" />
+    <state x="629" y="234" key="EnvironmentVariablesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604417095988" />
+>>>>>>> bfaeb58... create service architecture
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1603094658350">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
