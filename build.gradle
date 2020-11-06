@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.3.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
+	id 'war'
 }
 
 group = 'com.example'
@@ -13,12 +14,36 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.postgresql:postgresql'
+
+
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-devtools'
+
+	// Keycloak
+	implementation 'org.keycloak:keycloak-spring-boot-starter'
+
+	//Securité
+	implementation('org.springframework.security:spring-security-taglibs')
+
+	//Envoi de mail
+	implementation('org.springframework.boot:spring-boot-starter-mail')
+
+	//SQL
+	implementation 'org.postgresql:postgresql'
 	runtimeOnly 'org.postgresql:postgresql'
+
+	//TEST
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.keycloak.bom:keycloak-adapter-bom:4.8.3.Final"
 	}
 }
 

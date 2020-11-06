@@ -12,41 +12,37 @@ import java.util.List;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long user_id;
+    private String username;
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    //private long user_id;
 
-    @NotNull
     private String first_name;
 
-    @NotNull
     private String last_name;
 
-    @NotNull
     private String email;
 
-    @NotNull
-    private String phone_number;
-
+/*
     @NotNull
     private String username;
-
+*/
     @NotNull
     private String password;
 
     @ManyToMany
     @JoinTable(name="user_locations",
-            joinColumns = @JoinColumn(name="user_id"),
+            joinColumns = @JoinColumn(name="username"),
             inverseJoinColumns = @JoinColumn(name="location_id"))
     private List<Location> locations;
 
     @ManyToMany
     @JoinTable(name="user_notifications",
-            joinColumns = @JoinColumn(name="user_id"),
+            joinColumns = @JoinColumn(name="username"),
             inverseJoinColumns = @JoinColumn(name="notification_id"))
     private List<Location> notifications;
 
     /* SETTER & GETTER */
-
+/*
     public long getUser_id() {
         return user_id;
     }
@@ -54,7 +50,7 @@ public class User {
     public void setUser_id(long user_id) {
         this.user_id = user_id;
     }
-
+*/
     public String getFirst_name() {
         return first_name;
     }
@@ -78,7 +74,7 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
+/*
     public String getPhone_number() {
         return phone_number;
     }
@@ -86,7 +82,7 @@ public class User {
     public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
-
+*/
     public String getUsername() {
         return username;
     }

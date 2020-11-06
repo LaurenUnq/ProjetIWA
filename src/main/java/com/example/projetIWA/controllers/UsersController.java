@@ -23,13 +23,13 @@ public class UsersController {
         return userRepository.findAll();
     }
 
-    //get un user avec tel id
-    @GetMapping @RequestMapping("{id}")
-    public User get(@PathVariable Long id) {
-        if(!userRepository.findById(id).isPresent()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+id+" not found");
+    //get un user avec tel username
+    @GetMapping @RequestMapping("{username}")
+    public User get(@PathVariable String username) {
+        if(!userRepository.findById(username).isPresent()) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+username+" not found");
         }
-        return userRepository.getOne(id);
+        return userRepository.getOne(username);
     }
 
     //creer un user
@@ -40,21 +40,21 @@ public class UsersController {
     }
 
     //delete un user
-    @RequestMapping(value = "{id}",method = RequestMethod.DELETE)
-    public void delete(@PathVariable Long id) {
+    @RequestMapping(value = "{username}",method = RequestMethod.DELETE)
+    public void delete(@PathVariable String username) {
         // Toujours verifier s'il faut supprimer aussi
         // les enregistrements enfants
-        userRepository.deleteById(id);
+        userRepository.deleteById(username);
     }
 
     //Update un user
-    @RequestMapping(value="{id}",method = RequestMethod.PUT)
-    public User update(@PathVariable Long id, @RequestBody User user) {
+    @RequestMapping(value="{username}",method = RequestMethod.PUT)
+    public User update(@PathVariable String username, @RequestBody User user) {
         // TODO: Ajouter ici une validation si tous
         // les champs ont ete passes
         // Sinon, retourner une erreur 400 (Bad Payload)
-        User existingUser = userRepository.getOne(id);
-        BeanUtils.copyProperties(user,existingUser,"user_id");
+        User existingUser = userRepository.getOne(username);
+        BeanUtils.copyProperties(user,existingUser,"username");
         return userRepository.saveAndFlush(existingUser);
     }
 }
