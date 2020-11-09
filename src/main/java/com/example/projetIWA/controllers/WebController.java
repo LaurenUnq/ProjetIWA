@@ -21,7 +21,7 @@ public class WebController {
         return "external";
     }
 
-    @GetMapping(path = "/customers")
+    @GetMapping(path = "/users")
     public String customers(Principal principal, Model model) {
         //addUsers();
         Iterable<User> users = userRepository.findAll();

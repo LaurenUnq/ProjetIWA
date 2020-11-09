@@ -14,8 +14,8 @@ com/example/projetIWA/models/Notification.java
  com.example.projetIWA.models.Notification
 com/example/projetIWA/controllers/LocationsController.java
  com.example.projetIWA.controllers.LocationsController
-com/example/projetIWA/SecurityConfig.java
- com.example.projetIWA.SecurityConfig
+com/example/projetIWA/controllers/UsersController.java
+ com.example.projetIWA.controllers.UsersController
 com/example/projetIWA/repositories/VerificationTokenRepository.java
  com.example.projetIWA.repositories.VerificationTokenRepository
 com/example/projetIWA/AdminKeycloak.java
@@ -28,9 +28,9 @@ com/example/projetIWA/controllers/HomeController.java
  com.example.projetIWA.controllers.HomeController
 com/example/projetIWA/models/User.java
  com.example.projetIWA.models.User
-com/example/projetIWA/controllers/UsersController.java
- com.example.projetIWA.controllers.UsersController
 com/example/projetIWA/controllers/WebController.java
  com.example.projetIWA.controllers.WebController
+com/example/projetIWA/SecurityConfig.java
+ com.example.projetIWA.SecurityConfig
 com/example/projetIWA/controllers/CustomUserAttrController.java
  com.example.projetIWA.controllers.CustomUserAttrController

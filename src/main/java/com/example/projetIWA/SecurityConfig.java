@@ -44,9 +44,9 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
     protected void configure(final HttpSecurity httpSecurity) throws Exception {
         super.configure(httpSecurity);
         httpSecurity.authorizeRequests()
-                .antMatchers("/customers*").permitAll()
                 .antMatchers("/users*").permitAll()
-                .antMatchers("/customers*", "/users*")
+                .antMatchers("/userAccount*").permitAll()
+                .antMatchers("/users*", "/userAccount*")
                 .hasRole("user")
                 .anyRequest()
                 .permitAll();

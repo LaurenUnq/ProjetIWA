@@ -26,7 +26,7 @@ public class CustomUserAttrController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping(path = "/users")
+    @GetMapping("/userAccount")
     public String getUserInfo(Model model) {
 
         KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext()
