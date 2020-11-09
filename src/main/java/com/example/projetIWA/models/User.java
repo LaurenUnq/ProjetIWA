@@ -12,9 +12,12 @@ import java.util.List;
 public class User {
 
     @Id
-    private String username;
+    @NotNull
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
-    //private long user_id;
+    private String id;
+
+    @Column(unique=true)
+    private String username;
 
     private String first_name;
 
@@ -26,31 +29,33 @@ public class User {
     @NotNull
     private String username;
 */
+/*
     @NotNull
     private String password;
+*/
 
     @ManyToMany
     @JoinTable(name="user_locations",
-            joinColumns = @JoinColumn(name="username"),
+            joinColumns = @JoinColumn(name="id"),
             inverseJoinColumns = @JoinColumn(name="location_id"))
     private List<Location> locations;
 
     @ManyToMany
     @JoinTable(name="user_notifications",
-            joinColumns = @JoinColumn(name="username"),
+            joinColumns = @JoinColumn(name="id"),
             inverseJoinColumns = @JoinColumn(name="notification_id"))
     private List<Location> notifications;
 
     /* SETTER & GETTER */
-/*
-    public long getUser_id() {
-        return user_id;
+
+    public String getUser_id() {
+        return id;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUser_id(String user_id) {
+        this.id = user_id;
     }
-*/
+
     public String getFirst_name() {
         return first_name;
     }
@@ -91,6 +96,7 @@ public class User {
         this.username = username;
     }
 
+    /*
     public String getPassword() {
         return password;
     }
@@ -98,6 +104,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
+*/
 
 }

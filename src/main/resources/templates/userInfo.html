@@ -6,10 +6,16 @@
 <div id="container">
     <h1>
         Hello, <span th:text="${username}">--name--</span>.
+
     </h1>
     <h3>
-        Your Date of Birth as per our records is <span th:text="${dob}" />.
+        Welcome to the User info test page !!
     </h3>
+    <ul>
+        <li>First Name : <span th:text="${firstName}">--name--</span>.</li>
+        <li>Last Name : <span th:text="${lastName}">--name--</span>.</li>
+        <li>Email : <span th:text="${email}">--name--</span>.</li>
+    </ul>
 </div>
 </body>
 </html>

@@ -25,12 +25,12 @@ public class UsersController {
     }
 
     //get un user avec tel username
-    @GetMapping @RequestMapping("{username}")
-    public User get(@PathVariable String username) {
-        if(!userRepository.findById(username).isPresent()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+username+" not found");
+    @GetMapping @RequestMapping("{id}")
+    public User get(@PathVariable String id) {
+        if(!userRepository.findById(id).isPresent()) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+id+" not found");
         }
-        return userRepository.getOne(username);
+        return userRepository.getOne(id);
     }
 
     //creer un user
@@ -41,20 +41,20 @@ public class UsersController {
     }
 
     //delete un user
-    @RequestMapping(value = "{username}",method = RequestMethod.DELETE)
-    public void delete(@PathVariable String username) {
+    @RequestMapping(value = "{id}",method = RequestMethod.DELETE)
+    public void delete(@PathVariable String id) {
         // Toujours verifier s'il faut supprimer aussi
         // les enregistrements enfants
-        userRepository.deleteById(username);
+        userRepository.deleteById(id);
     }
 
     //Update un user
-    @RequestMapping(value="{username}",method = RequestMethod.PUT)
-    public User update(@PathVariable String username, @RequestBody User user) {
+    @RequestMapping(value="{id}",method = RequestMethod.PUT)
+    public User update(@PathVariable String id, @RequestBody User user) {
         // TODO: Ajouter ici une validation si tous
         // les champs ont ete passes
         // Sinon, retourner une erreur 400 (Bad Payload)
-        User existingUser = userRepository.getOne(username);
+        User existingUser = userRepository.getOne(id);
         BeanUtils.copyProperties(user,existingUser,"username");
         return userRepository.saveAndFlush(existingUser);
     }
