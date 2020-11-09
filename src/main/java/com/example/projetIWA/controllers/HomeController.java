@@ -1,13 +1,12 @@
 package com.example.projetIWA.controllers;
 
-import com.example.projetIWA.models.Location;
+import com.example.projetIWA.AdminKeycloak;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Map;
+import java.io.IOException;
 
 @RestController
 @RequestMapping("api/v1/home")
@@ -17,7 +16,7 @@ public class HomeController {
     private String appVersion;
 
     @GetMapping
-    public String get() {
+    public String get() throws IOException {
         return this.appVersion;
     }
 }

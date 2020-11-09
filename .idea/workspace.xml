@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b21270f9-0048-403a-8f55-25da3078a1d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/CovidAlertSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/testController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/VerificationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/VerificationTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/external.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/AdminKeycloak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/AdminTokenKeycloak.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,15 +22,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tables_covid.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create_tables_covid.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/CovidAlertSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/CovidAlertSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/ProjetIwaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/ProjetIwaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/testController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/testController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/external.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +77,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="projetIWA" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="projetIWA" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -87,12 +89,6 @@
                 <item name="projetIWA" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="projetIWA" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -107,9 +103,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -125,6 +122,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -146,6 +144,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\satsu\Desktop\ProjetIWA\src\main\webapp\WEB-INF\html" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Gradle.projetIWA [bootRun]">
     <configuration name="ProjetIWA [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -238,6 +243,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProjetIwaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="projetIWA_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.projetIWA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.projetIWA.ProjetIwaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.projetIWA [bootRun]" />
       <item itemvalue="Gradle.projetIWA [build]" />
@@ -283,7 +301,13 @@
       <workItem from="1603441977028" duration="1878000" />
       <workItem from="1604519282637" duration="65000" />
       <workItem from="1604519357267" duration="6402000" />
-      <workItem from="1604660797453" duration="9898000" />
+      <workItem from="1604660797453" duration="22925000" />
+      <workItem from="1604917670180" duration="2032000" />
+      <workItem from="1604921932660" duration="1550000" />
+      <workItem from="1604927880568" duration="647000" />
+      <workItem from="1604928641555" duration="2719000" />
+      <workItem from="1604936114328" duration="5284000" />
+      <workItem from="1604942210438" duration="133000" />
     </task>
     <servers />
   </component>
@@ -324,10 +348,15 @@
     <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603098342332" />
     <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1603443036970" />
     <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604670703332" />
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604671800022">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="2466" y="244" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604941301647">
+      <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604671800022" />
+    <state x="2466" y="244" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604941301647" />
+    <state x="2373" y="145" key="CommitChangelistDialog2" timestamp="1604942424557">
+      <screen x="1920" y="26" width="1680" height="1050" />
+    </state>
+    <state x="2373" y="145" key="CommitChangelistDialog2/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604942424557" />
     <state x="97" y="241" key="EnvironmentVariablesDialog" timestamp="1604661740810">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -338,71 +367,76 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603094658350" />
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom" timestamp="1604676136024">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1637" height="322" key="GridCell.Tab.0.bottom" timestamp="1604941941389">
+      <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604415940762" />
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604676136024" />
-    <state width="1637" height="245" key="GridCell.Tab.0.bottom/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604662568027" />
-    <state width="1493" height="245" key="GridCell.Tab.0.center" timestamp="1604676136024">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604922199701" />
+    <state width="1637" height="322" key="GridCell.Tab.0.bottom/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604941941389" />
+    <state width="1637" height="322" key="GridCell.Tab.0.center" timestamp="1604941941389">
+      <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604415940762" />
-    <state width="1493" height="245" key="GridCell.Tab.0.center/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604676136024" />
-    <state width="1637" height="245" key="GridCell.Tab.0.center/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604662568026" />
-    <state width="1493" height="245" key="GridCell.Tab.0.left" timestamp="1604676136024">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="150" key="GridCell.Tab.0.center/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604922199701" />
+    <state width="1637" height="322" key="GridCell.Tab.0.center/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604941941389" />
+    <state width="1637" height="322" key="GridCell.Tab.0.left" timestamp="1604941941389">
+      <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604415940762" />
-    <state width="1493" height="245" key="GridCell.Tab.0.left/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604676136024" />
-    <state width="1637" height="245" key="GridCell.Tab.0.left/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604662568026" />
-    <state width="1493" height="245" key="GridCell.Tab.0.right" timestamp="1604676136024">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="150" key="GridCell.Tab.0.left/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604922199701" />
+    <state width="1637" height="322" key="GridCell.Tab.0.left/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604941941389" />
+    <state width="1637" height="322" key="GridCell.Tab.0.right" timestamp="1604941941389">
+      <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604415940762" />
-    <state width="1493" height="245" key="GridCell.Tab.0.right/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604676136024" />
-    <state width="1637" height="245" key="GridCell.Tab.0.right/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604662568026" />
-    <state width="1344" height="258" key="GridCell.Tab.1.bottom" timestamp="1604525871450">
+    <state width="1493" height="150" key="GridCell.Tab.0.right/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604922199701" />
+    <state width="1637" height="322" key="GridCell.Tab.0.right/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604941941389" />
+    <state width="1635" height="449" key="GridCell.Tab.1.bottom" timestamp="1604927857716">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
     <state width="1344" height="258" key="GridCell.Tab.1.bottom/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604520389976" />
-    <state width="1344" height="258" key="GridCell.Tab.1.bottom/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604525871450" />
-    <state width="1344" height="258" key="GridCell.Tab.1.center" timestamp="1604525871450">
+    <state width="1635" height="449" key="GridCell.Tab.1.bottom/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604927857716" />
+    <state width="1635" height="449" key="GridCell.Tab.1.center" timestamp="1604927857716">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
     <state width="1344" height="258" key="GridCell.Tab.1.center/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604520389976" />
-    <state width="1344" height="258" key="GridCell.Tab.1.center/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604525871450" />
-    <state width="1344" height="258" key="GridCell.Tab.1.left" timestamp="1604525871449">
+    <state width="1635" height="449" key="GridCell.Tab.1.center/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604927857716" />
+    <state width="1635" height="449" key="GridCell.Tab.1.left" timestamp="1604927857716">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
     <state width="1344" height="258" key="GridCell.Tab.1.left/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604520389976" />
-    <state width="1344" height="258" key="GridCell.Tab.1.left/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604525871449" />
-    <state width="1344" height="258" key="GridCell.Tab.1.right" timestamp="1604525871450">
+    <state width="1635" height="449" key="GridCell.Tab.1.left/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604927857716" />
+    <state width="1635" height="449" key="GridCell.Tab.1.right" timestamp="1604927857716">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
     <state width="1344" height="258" key="GridCell.Tab.1.right/1920.26.1680.1050/0.0.1536.864@0.0.1536.864" timestamp="1604520389976" />
-    <state width="1344" height="258" key="GridCell.Tab.1.right/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604525871450" />
+    <state width="1635" height="449" key="GridCell.Tab.1.right/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604927857716" />
     <state x="311" y="7" key="SettingsEditor" timestamp="1604337897637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="249" y="6" key="SettingsEditor/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603099979447" />
     <state x="311" y="7" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604337897637" />
-    <state x="484" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1603441978188">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604937746943">
+      <screen x="1920" y="26" width="1680" height="1050" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604937746943" />
+    <state x="2428" y="338" key="com.intellij.ide.util.TipDialog" timestamp="1604936124182">
+      <screen x="1920" y="26" width="1680" height="1050" />
     </state>
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603198290201" />
     <state x="484" y="267" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1603441978188" />
+    <state x="2428" y="338" key="com.intellij.ide.util.TipDialog/1920.26.1680.1050/0.0.1536.864@1920.26.1680.1050" timestamp="1604936124182" />
   </component>
 </project>

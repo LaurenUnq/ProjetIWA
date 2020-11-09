@@ -23,9 +23,15 @@ dependencies {
 
 	// Keycloak
 	implementation 'org.keycloak:keycloak-spring-boot-starter'
+	compile group: 'org.keycloak', name: 'keycloak-admin-client', version: '11.0.3'
+	compile group: 'org.keycloak', name: 'keycloak-core', version: '11.0.3'
 
 	//Securité
 	implementation('org.springframework.security:spring-security-taglibs')
+	implementation('org.springframework.boot:spring-boot-starter-security')
+	testImplementation('org.springframework.security:spring-security-test')
+	providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
+
 
 	//Envoi de mail
 	implementation('org.springframework.boot:spring-boot-starter-mail')

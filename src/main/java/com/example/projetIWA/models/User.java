@@ -6,7 +6,7 @@ import com.sun.istack.NotNull;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity(name="users")
+@Entity(name="user_entity")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handle"})
 @Access(AccessType.FIELD)
 public class User {
