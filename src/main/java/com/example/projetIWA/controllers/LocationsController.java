@@ -34,8 +34,9 @@ public class LocationsController {
     //creer une location
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Location create(@RequestBody final Location location) {
-        return  locationRepository.saveAndFlush(location);
+    public Location create(@RequestBody final Location location, String userName) {
+        System.out.println(location.toString());
+        return  new Location();
     }
 
     //delete une location

@@ -45,6 +45,8 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 
+	// KAFKA
+	implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.6.2'
 }
 
 dependencyManagement {
