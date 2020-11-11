@@ -23,23 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b21270f9-0048-403a-8f55-25da3078a1d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/LocationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/LocationsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/NotificationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +136,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -141,7 +146,26 @@
     <property name="settings.editor.selected.configurable" value="Shelf.Project.Settings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.projetIWA [bootRun]">
+  <component name="RunManager" selected="Gradle.ProjetIWA [bootJar]">
+    <configuration name="ProjetIWA [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ProjetIWA [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,7 +197,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -223,9 +247,11 @@
       <item itemvalue="Gradle.projetIWA [bootRun]" />
       <item itemvalue="Gradle.projetIWA [build]" />
       <item itemvalue="Gradle.ProjetIWA [run]" />
+      <item itemvalue="Gradle.ProjetIWA [bootJar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ProjetIWA [bootJar]" />
         <item itemvalue="Gradle.projetIWA [bootRun]" />
         <item itemvalue="Gradle.ProjetIWA [run]" />
         <item itemvalue="Gradle.projetIWA [build]" />
@@ -263,6 +289,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="90" key="#Assign_Data_Sources" timestamp="1603098268459">
@@ -273,66 +300,70 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#Project_Structure/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603099356749" />
-    <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604417096717">
+    <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605029182296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200938238" />
-    <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604417096717" />
-    <state x="718" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1604421006592">
+    <state x="279" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605029182296" />
+    <state x="718" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1605030424546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603098342332" />
     <state x="598" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1603443036970" />
-    <state x="718" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604421006592" />
-    <state x="629" y="234" key="EnvironmentVariablesDialog" timestamp="1604417095988">
+    <state x="718" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605030424546" />
+    <state x="629" y="234" key="EnvironmentVariablesDialog" timestamp="1605029181601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="503" y="194" key="EnvironmentVariablesDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603200730142" />
-    <state x="629" y="234" key="EnvironmentVariablesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604417095988" />
+    <state x="629" y="234" key="EnvironmentVariablesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605029181601" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1603094658350">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603094658350" />
-    <state width="1877" height="304" key="GridCell.Tab.0.bottom" timestamp="1604422251211">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1605034741171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
-    <state width="1877" height="304" key="GridCell.Tab.0.center" timestamp="1604422251211">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605034741171" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1605034741171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
-    <state width="1877" height="304" key="GridCell.Tab.0.left" timestamp="1604422251211">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605034741171" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1605034741171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
-    <state width="1877" height="304" key="GridCell.Tab.0.right" timestamp="1604422251211">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605034741171" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1605034741171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1603109368273">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605034741171" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604947957207">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1603109368273">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604947957207" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1604947957206">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1603109368273">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604947957206" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1604947957206">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1603109368273">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604947957206" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1604947957206">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603109368273" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604947957206" />
     <state x="311" y="7" key="SettingsEditor" timestamp="1604337897637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -343,6 +374,10 @@
     </state>
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603198290201" />
     <state x="484" y="267" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1603441978188" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604931277197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604931277197" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604421031788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

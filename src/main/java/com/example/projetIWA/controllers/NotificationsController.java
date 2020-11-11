@@ -2,6 +2,7 @@ package com.example.projetIWA.controllers;
 
 import com.example.projetIWA.models.Location;
 import com.example.projetIWA.models.Notification;
+import com.example.projetIWA.models.User;
 import com.example.projetIWA.repositories.LocationRepository;
 import com.example.projetIWA.repositories.NotificationRepository;
 import com.example.projetIWA.services.NotificationsService;
@@ -47,10 +48,15 @@ public class NotificationsController {
     }
 
 
-    //creer une notification TODO
+    /**
+     * create notification for users who have been in contact with the given positive user
+     * @param user - the user id of positive user
+     * @return
+     */
     @PostMapping
+    @RequestMapping("user")
     @ResponseStatus(HttpStatus.CREATED)
-    public Notification create(@RequestBody final Notification notification) {
-        return  notificationRepository.saveAndFlush(notification);
+    public void create(@RequestBody final User user) {
+        notificationsService.createNotificationsFromPostiveUser(user.getUser_id());
     }
 }
