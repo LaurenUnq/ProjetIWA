@@ -2,6 +2,8 @@ package com.example.projetIWA.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.List;
@@ -27,16 +29,18 @@ public class User {
 
     private String password;
 
-    @ManyToMany
+    @ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(name="user_locations",
             joinColumns = @JoinColumn(name="id"),
             inverseJoinColumns = @JoinColumn(name="location_id"))
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<Location> locations;
 
-    @ManyToMany
+    @ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(name="user_notifications",
             joinColumns = @JoinColumn(name="id"),
             inverseJoinColumns = @JoinColumn(name="notification_id"))
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<Notification> notifications;
 
 

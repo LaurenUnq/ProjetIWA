@@ -2,6 +2,7 @@ package com.example.projetIWA.controllers;
 
 import com.example.projetIWA.models.Location;
 import com.example.projetIWA.repositories.LocationRepository;
+import com.example.projetIWA.services.LocationsService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,12 +11,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/locations")
+@RequestMapping("locations")
 public class LocationsController {
 
 
     @Autowired
     private LocationRepository locationRepository;
+
+    @Autowired
+    private LocationsService locationsService;
 
     @GetMapping
     //Get toutes les locations
@@ -31,12 +35,17 @@ public class LocationsController {
     }
 
 
-    //creer une location
+    /**
+     * Create localisation for user connected TODO
+     * @param location - the location
+     * @return
+     */
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Location create(@RequestBody final Location location, String userName) {
-        System.out.println(location.toString());
-        return  new Location();
+    public Location create(@RequestBody final Location location) {
+        long userId = 1; // TODO
+        this.locationsService.create(location, userId);
+        return  location;
     }
 
     //delete une location

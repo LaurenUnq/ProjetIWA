@@ -57,6 +57,6 @@ public class NotificationsController {
     @RequestMapping("user")
     @ResponseStatus(HttpStatus.CREATED)
     public void create(@RequestBody final User user) {
-        notificationsService.createNotificationsFromPostiveUser(user.getUser_id());
+        notificationsService.createNotificationsFromPostiveUser(user);
     }
 }
