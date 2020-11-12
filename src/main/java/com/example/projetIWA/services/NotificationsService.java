@@ -1,5 +1,6 @@
 package com.example.projetIWA.services;
 
+import com.example.projetIWA.kafka.KafkaConsumerService;
 import com.example.projetIWA.kafka.KafkaProducerConfig;
 import com.example.projetIWA.kafka.KafkaProducerService;
 import com.example.projetIWA.kafka.models.UserLocalisation;
@@ -28,6 +29,9 @@ public class NotificationsService {
     @Autowired
     private KafkaProducerService kafkaProducerService;
 
+    @Autowired
+    private KafkaConsumerService kafkaConsumerService;
+
     /**
      * get all notification for given user id and set all notification seen
      * @param id - the user's id
@@ -52,8 +56,8 @@ public class NotificationsService {
         return this.userRepository.getOne(id).getNotifications().stream().filter(notification -> !notification.getViewed()).count();
     }
 
-    public void createNotificationsFromPostiveUser(Long userId) {
-        Location loc = new Location();
+    public void createNotificationsFromPostiveUser(User user) {
+        /*Location loc = new Location();
         loc.setLatitude(652.152455);
         loc.setLongitude(5.24850);
         loc.setLocation_date(new Date());
@@ -62,13 +66,13 @@ public class NotificationsService {
         ul.setLocation(loc);
         ul.setUser_id(userId);
 
-        this.kafkaProducerService.saveCreateUserLog(ul);
+        this.kafkaProducerService.saveCreateUserLog(ul);*/
         // insert all localisation from kafka to postgre (7 derniers jour)
 
         // pour toute ces localiations chercher les cas contact sur kafka
         //List<Notification> l = this.notificationRepository.findAllNotifByUserId(userId);
 
         // créer un notifications pour chaque user
-        System.out.println(ul);
+        //this.kafkaConsumerService.consume();
     }
 }
