@@ -30,7 +30,7 @@ public class LocationsService {
      * @param location - the location
      * @param userId - the user's id
      */
-    public void create(Location location, Long userId){
+    public void create(Location location, String userId){
         UserLocalisation ul = new UserLocalisation();
         location.setLocation_date(new Date());
         ul.setLocation(location);

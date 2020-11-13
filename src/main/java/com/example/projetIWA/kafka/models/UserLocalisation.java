@@ -4,7 +4,7 @@ import com.example.projetIWA.models.Location;
 
 public class UserLocalisation {
 
-    private Long user_id;
+    private String user_id;
     private Location location;
 
     public Location getLocation() {
@@ -15,11 +15,11 @@ public class UserLocalisation {
         this.location = location;
     }
 
-    public Long getUser_id() {
+    public String getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(Long user_id) {
+    public void setUser_id(String user_id) {
         this.user_id = user_id;
     }
 

@@ -29,7 +29,7 @@ public class NotificationsController {
      */
     @GetMapping
     @RequestMapping("user/{id}")
-    public List<Notification> getAllNotifications(@PathVariable Long id) {
+    public List<Notification> getAllNotifications(@PathVariable String id) {
         return notificationsService.getAllNotificationByUserId(id);
     }
 
@@ -40,7 +40,7 @@ public class NotificationsController {
      */
     @GetMapping
     @RequestMapping("user/{id}/notViewed")
-    public long getNumberNotificationsNotViewedByUserId(@PathVariable Long id) {
+    public long getNumberNotificationsNotViewedByUserId(@PathVariable String id) {
         return notificationsService.getNumberNotificationNotViewedByUserId(id);
     }
 

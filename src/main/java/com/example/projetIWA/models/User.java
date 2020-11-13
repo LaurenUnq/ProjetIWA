@@ -26,9 +26,9 @@ public class User {
     private String last_name;
 
     private String email;
-
+/*
     private String password;
-
+*/
     @ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(name="user_locations",
             joinColumns = @JoinColumn(name="id"),

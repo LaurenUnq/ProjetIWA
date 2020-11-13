@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.Date;
 import java.util.List;
 
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface UserRepository extends JpaRepository<User,String> {
 
     /**
      * return all contact case for given location informations except given user's id
@@ -36,6 +36,6 @@ public interface UserRepository extends JpaRepository<User,Long> {
                                   double longitudeMin,
                                   Date locationDateMax,
                                   Date locationDateMin,
-                                  long user_id);
+                                  String user_id);
 }
 

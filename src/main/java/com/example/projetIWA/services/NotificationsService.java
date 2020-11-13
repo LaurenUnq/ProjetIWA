@@ -1,9 +1,7 @@
 package com.example.projetIWA.services;
 
 import com.example.projetIWA.kafka.KafkaConsumerService;
-import com.example.projetIWA.kafka.KafkaProducerConfig;
 import com.example.projetIWA.kafka.KafkaProducerService;
-import com.example.projetIWA.kafka.models.UserLocalisation;
 import com.example.projetIWA.models.Location;
 import com.example.projetIWA.models.Notification;
 import com.example.projetIWA.models.User;
@@ -35,7 +33,7 @@ public class NotificationsService {
      * @param id - the user's id
      * @return the user's notification list
      */
-    public List<Notification> getAllNotificationByUserId(Long id) {
+    public List<Notification> getAllNotificationByUserId(String id) {
         User user = this.userRepository.getOne(id);
 
         // put all notification view to true
@@ -50,7 +48,7 @@ public class NotificationsService {
      * @param id - the user's id
      * @return the number of user's notification which are not viewed
      */
-    public long getNumberNotificationNotViewedByUserId(Long id) {
+    public long getNumberNotificationNotViewedByUserId(String id) {
         return this.userRepository.getOne(id).getNotifications().stream().filter(notification -> !notification.getViewed()).count();
     }
 
