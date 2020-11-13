@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/CustomUserAttrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/CustomUserAttrController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/WebController.java" afterDir="false" />
@@ -42,12 +43,15 @@
 =======
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
 >>>>>>> bc014a2... kafka config
+=======
+>>>>>>> c3ba839... create notification
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
@@ -55,12 +59,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
 =======
 >>>>>>> 099b147... create location for user
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+>>>>>>> c3ba839... create notification
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/LocationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/LocationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/kafka/KafkaConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/kafka/KafkaConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/LocationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/LocationsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/NotificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/NotificationsService.java" afterDir="false" />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -467,6 +473,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <state width="1637" height="322" key="GridCell.Tab.0.bottom" timestamp="1604949861227">
       <screen x="1920" y="26" width="1680" height="1050" />
     </state>
@@ -509,28 +516,32 @@
 =======
     <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1605205206296">
 >>>>>>> 099b147... create location for user
+=======
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1605267258524">
+>>>>>>> c3ba839... create notification
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605205206296" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1605205206296">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605267258524" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1605267258524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605205206296" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1605205206296">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605267258524" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1605267258524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605205206296" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1605205206296">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605267258524" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1605267258524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604422251211" />
@@ -564,6 +575,9 @@
 =======
     <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605205206296" />
 >>>>>>> 099b147... create location for user
+=======
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605267258524" />
+>>>>>>> c3ba839... create notification
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604947957207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

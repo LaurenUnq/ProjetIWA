@@ -1,12 +1,9 @@
 package com.example.projetIWA.controllers;
 
-import com.example.projetIWA.models.Location;
 import com.example.projetIWA.models.Notification;
 import com.example.projetIWA.models.User;
-import com.example.projetIWA.repositories.LocationRepository;
 import com.example.projetIWA.repositories.NotificationRepository;
 import com.example.projetIWA.services.NotificationsService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -57,6 +54,6 @@ public class NotificationsController {
     @RequestMapping("user")
     @ResponseStatus(HttpStatus.CREATED)
     public void create(@RequestBody final User user) {
-        notificationsService.createNotificationsFromPostiveUser(user);
+        notificationsService.createNotificationsFromPositiveUser(user);
     }
 }
