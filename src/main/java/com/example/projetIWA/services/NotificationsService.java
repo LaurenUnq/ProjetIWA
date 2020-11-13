@@ -12,9 +12,7 @@ import com.example.projetIWA.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class NotificationsService {
@@ -56,23 +54,51 @@ public class NotificationsService {
         return this.userRepository.getOne(id).getNotifications().stream().filter(notification -> !notification.getViewed()).count();
     }
 
-    public void createNotificationsFromPostiveUser(User user) {
-        /*Location loc = new Location();
-        loc.setLatitude(652.152455);
-        loc.setLongitude(5.24850);
-        loc.setLocation_date(new Date());
+    /**
+     * Create all contacts cases for given user
+     * cas contact = 7j avant max, + ou - 0.00005 en longitude latitude, + ou - 15 min avant la localication
+     * @param user - the user positive
+     */
+    public void createNotificationsFromPositiveUser(User user) {
+        // toutes les localisations du user donnée durant le 7 dernier jour
+        Optional<User> userFound = this.userRepository.findById(user.getUser_id());
 
-        UserLocalisation ul = new UserLocalisation();
-        ul.setLocation(loc);
-        ul.setUser_id(userId);
+        if (userFound.isPresent()) {
+            List<Location> allLocations = userFound.get().getLocations();
 
-        this.kafkaProducerService.saveCreateUserLog(ul);*/
-        // insert all localisation from kafka to postgre (7 derniers jour)
+            // pour toutes ces localiations chercher les cas contact
+            List<User> allContactCases = new ArrayList<User>();
+            Date limitDate = new Date(new Date().getTime() - 604800000L); // - 7 jours en milisecondes
+            allLocations.forEach(location -> {
+                if(location.getLocation_date().after(limitDate)) {
+                    List<User> allUsers = this.userRepository.findAllContactCase(
+                            location.getLatitude() + 0.00005,
+                            location.getLatitude() - 0.00005,
+                            location.getLongitude() + 0.00005,
+                            location.getLongitude() - 0.00005,
+                            new Date(location.getLocation_date().getTime() + 900000), //+ 15min en milisecondes
+                            new Date(location.getLocation_date().getTime() - 900000), //- 15min en milisecondes
+                            user.getUser_id()
+                    );
+                    allUsers.forEach(userSelect -> {
+                        if (!allContactCases.contains(userSelect)){
+                            allContactCases.add(userSelect);
+                        }
+                    });
+                }
+            });
 
-        // pour toute ces localiations chercher les cas contact sur kafka
-        //List<Notification> l = this.notificationRepository.findAllNotifByUserId(userId);
+            // créer la notification pour chaque user
+            Notification notif = new Notification();
+            notif.setDescription("Cas contact 1er degré");
+            notif.setNotification_date(new Date());
+            notif.setViewed(false);
+            Notification notificationSave = this.notificationRepository.saveAndFlush(notif);
 
-        // créer un notifications pour chaque user
-        //this.kafkaConsumerService.consume();
+            allContactCases.forEach(userSelect -> {
+                userSelect.getNotifications().add(notificationSave);
+            });
+            this.userRepository.saveAll(allContactCases);
+        }
     }
 }

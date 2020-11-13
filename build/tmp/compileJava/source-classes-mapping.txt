@@ -1,9 +1,9 @@
-com/example/projetIWA/repositories/UserRepository.java
- com.example.projetIWA.repositories.UserRepository
-com/example/projetIWA/kafka/KafkaConsumerService.java
- com.example.projetIWA.kafka.KafkaConsumerService
-com/example/projetIWA/repositories/NotificationRepository.java
- com.example.projetIWA.repositories.NotificationRepository
+com/example/projetIWA/models/Location.java
+ com.example.projetIWA.models.Location
+com/example/projetIWA/kafka/KafkaProducerConfig.java
+ com.example.projetIWA.kafka.KafkaProducerConfig
+com/example/projetIWA/models/User.java
+ com.example.projetIWA.models.User
 com/example/projetIWA/ProjetIwaApplication.java
  com.example.projetIWA.ProjetIwaApplication
 com/example/projetIWA/kafka/KafkaProducerService.java
@@ -22,19 +22,19 @@ com/example/projetIWA/kafka/KafkaTopicConfig.java
  com.example.projetIWA.kafka.KafkaTopicConfig
 com/example/projetIWA/controllers/HomeController.java
  com.example.projetIWA.controllers.HomeController
-com/example/projetIWA/controllers/LocationsController.java
- com.example.projetIWA.controllers.LocationsController
-com/example/projetIWA/models/Location.java
- com.example.projetIWA.models.Location
-com/example/projetIWA/kafka/KafkaProducerConfig.java
- com.example.projetIWA.kafka.KafkaProducerConfig
-com/example/projetIWA/services/NotificationsService.java
- com.example.projetIWA.services.NotificationsService
-com/example/projetIWA/services/LocationsService.java
- com.example.projetIWA.services.LocationsService
-com/example/projetIWA/models/User.java
- com.example.projetIWA.models.User
-com/example/projetIWA/controllers/NotificationsController.java
- com.example.projetIWA.controllers.NotificationsController
+com/example/projetIWA/repositories/NotificationRepository.java
+ com.example.projetIWA.repositories.NotificationRepository
 com/example/projetIWA/controllers/UsersController.java
  com.example.projetIWA.controllers.UsersController
+com/example/projetIWA/kafka/KafkaConsumerService.java
+ com.example.projetIWA.kafka.KafkaConsumerService
+com/example/projetIWA/controllers/LocationsController.java
+ com.example.projetIWA.controllers.LocationsController
+com/example/projetIWA/services/LocationsService.java
+ com.example.projetIWA.services.LocationsService
+com/example/projetIWA/repositories/UserRepository.java
+ com.example.projetIWA.repositories.UserRepository
+com/example/projetIWA/services/NotificationsService.java
+ com.example.projetIWA.services.NotificationsService
+com/example/projetIWA/controllers/NotificationsController.java
+ com.example.projetIWA.controllers.NotificationsController
