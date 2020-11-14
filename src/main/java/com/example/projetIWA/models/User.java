@@ -31,14 +31,14 @@ public class User {
 */
     @ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(name="user_locations",
-            joinColumns = @JoinColumn(name="id"),
+            joinColumns = @JoinColumn(name="user_id"),
             inverseJoinColumns = @JoinColumn(name="location_id"))
     @Fetch(value = FetchMode.SUBSELECT)
     private List<Location> locations;
 
     @ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(name="user_notifications",
-            joinColumns = @JoinColumn(name="id"),
+            joinColumns = @JoinColumn(name="user_id"),
             inverseJoinColumns = @JoinColumn(name="notification_id"))
     @Fetch(value = FetchMode.SUBSELECT)
     private List<Notification> notifications;

@@ -43,7 +43,7 @@ public class LocationsController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Location create(@RequestBody final Location location) {
-        String userId = "2"; // TODO
+        String userId = "e9f7b368-f3ff-46d9-9d46-b60fabafedb8"; // TODO
         this.locationsService.create(location, userId);
         return  location;
     }
