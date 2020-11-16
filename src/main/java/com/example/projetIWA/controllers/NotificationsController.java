@@ -14,8 +14,6 @@ import java.util.List;
 @RequestMapping("notifications")
 public class NotificationsController {
 
-    // route send notif (if i am positive)
-
     @Autowired
     private NotificationRepository notificationRepository;
 

@@ -2,9 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Notifications</title>
 </head>
 <body>
+
+    <a href="/userAccount">Mes informations </a>
+    <a href="/locationView">Envoyer sa localisation </a>
+
     <form action="#" th:action="@{/notificationView}"method="post">
         <input type="submit" value="Je suis positif au COVID-19"/>
     </form>

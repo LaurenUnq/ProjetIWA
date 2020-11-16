@@ -29,17 +29,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KeycloakTeam/keycloak-11.0.2/standalone/configuration/standalone.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KeycloakTeam/keycloak-11.0.2/standalone/configuration/standalone.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/userInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tables_covid.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create_tables_covid.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/LocationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/LocationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/UsersServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/services/UsersServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/controllers/NotificationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/kafka/KafkaConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/kafka/KafkaConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/kafka/KafkaProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetIWA/kafka/KafkaProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,30 +321,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603094658350" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1605370279948">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1605534196304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605370279948" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1605370279948">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605373663473" />
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605534196304" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1605534196304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605370279948" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1605370279948">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605373663473" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605534196304" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1605534196304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605370279948" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1605370279948">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605373663473" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605534196304" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1605534196304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1603212552027" />
     <state width="1557" height="339" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603443873662" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605370279948" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605373663473" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605534196304" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604947957207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
