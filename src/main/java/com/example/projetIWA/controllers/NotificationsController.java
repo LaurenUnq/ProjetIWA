@@ -15,9 +15,6 @@ import java.util.List;
 public class NotificationsController {
 
     @Autowired
-    private NotificationRepository notificationRepository;
-
-    @Autowired
     private NotificationsService notificationsService;
 
     /**
