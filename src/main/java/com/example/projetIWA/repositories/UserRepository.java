@@ -21,8 +21,8 @@ public interface UserRepository extends JpaRepository<User,String> {
      * @param user_id - the user id to not select
      * @return the list of all users contact case
      */
-    @Query(value = "SELECT DISTINCT * FROM users u " +
-            "LEFT JOIN user_locations ul ON u.user_id = ul.user_id " +
+    @Query(value = "SELECT DISTINCT * FROM user_entity u " +
+            "LEFT JOIN user_locations ul ON u.id = ul.user_id " +
             "LEFT JOIN locations l ON ul.location_id = l.location_id " +
             "WHERE l.latitude <= ?1 " +
             "AND l.latitude >= ?2 " +
@@ -30,7 +30,7 @@ public interface UserRepository extends JpaRepository<User,String> {
             "AND l.longitude >= ?4 " +
             "AND l.location_date <= ?5 " +
             "AND l.location_date >= ?6 " +
-            "AND u.user_id != ?7"
+            "AND u.id != ?7"
             , nativeQuery = true)
     List<User> findAllContactCase(double latitudeMax,
                                   double latitudeMin,

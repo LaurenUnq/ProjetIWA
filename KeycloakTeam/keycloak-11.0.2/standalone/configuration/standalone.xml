@@ -139,14 +139,14 @@
                     </security>
                 </datasource>
                 <datasource jndi-name="java:jboss/datasources/KeycloakDS" pool-name="KeycloakDS" enabled="true" use-java-context="true">
-                    <connection-url>XXXXXURLBaseDeDOnnee(jdbc:postgresql://localhost:5432/covid_alert_db_project?)</connection-url>
+                    <connection-url>jdbc:postgresql://localhost:5432/covid_alert_db_project</connection-url>
                     <driver>postgresql</driver>
                     <pool>
                         <max-pool-size>20</max-pool-size>
                     </pool>
                     <security>
-                        <user-name>XXXXUSERNAME</user-name>
-                        <password>XXXPASSWORD</password>
+                        <user-name>postgres</user-name>
+                        <password>root</password>
                     </security>
                 </datasource>
                 <drivers>
