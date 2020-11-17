@@ -1,6 +1,5 @@
 package com.example.projetIWA.controllers;
 
-import com.example.projetIWA.models.Location;
 import com.example.projetIWA.models.Notification;
 import com.example.projetIWA.models.User;
 import com.example.projetIWA.services.NotificationsService;
@@ -15,7 +14,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.server.ResponseStatusException;

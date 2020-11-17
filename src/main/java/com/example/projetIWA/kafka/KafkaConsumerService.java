@@ -20,6 +20,10 @@ public class KafkaConsumerService
     private final Logger logger =
             LoggerFactory.getLogger(KafkaConsumerService.class);
 
+    /**
+     * Save in postgres db the user's location
+     * @param userLocalisation - the user's location to save
+     */
     @KafkaListener(topics = "usersLocalisations",
             containerFactory = "userKafkaListenerContainerFactory")
     public void consume(UserLocalisation userLocalisation)

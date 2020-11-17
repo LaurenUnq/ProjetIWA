@@ -5,32 +5,35 @@
     <title>Location</title>
 </head>
 <body>
-<h2>Envoyer sa localisation</h2>
+    <a href="/userAccount">Mes informations </a>
+    <a href="/notificationView">Gestion des notifications </a>
 
-<form action="#" th:action="@{/locationView}" th:object="${location}" method="post" id="locationForm">
-    <input type="number" step="any" th:field="*{latitude}" hidden="true" id="latitude"/></p>
-    <input type="number" step="any" th:field="*{longitude}" hidden="true" id="longitude"/></p>
-    <p><input  onclick="getLocation()" type="button" value="Envoyer"/> <input type="reset" value="Reset" /></p>
-</form>
+    <h2>Envoyer sa localisation</h2>
 
-<script>
-var latitudeInput = document.getElementById("latitude");
-var longitudeInput = document.getElementById("longitude");
+    <form action="#" th:action="@{/locationView}" th:object="${location}" method="post" id="locationForm">
+        <input type="number" step="any" th:field="*{latitude}" hidden="true" id="latitude"/></p>
+        <input type="number" step="any" th:field="*{longitude}" hidden="true" id="longitude"/></p>
+        <p><input  onclick="getLocation()" type="button" value="Envoyer"/> <input type="reset" value="Reset" /></p>
+    </form>
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+    <script>
+    var latitudeInput = document.getElementById("latitude");
+    var longitudeInput = document.getElementById("longitude");
 
-function showPosition(position) {
-  latitudeInput.value = position.coords.latitude;
-  longitudeInput.value = position.coords.longitude;
-  document.getElementById("locationForm").submit();
-}
-</script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      latitudeInput.value = position.coords.latitude;
+      longitudeInput.value = position.coords.longitude;
+      document.getElementById("locationForm").submit();
+    }
+    </script>
 
 </body>
 </html>

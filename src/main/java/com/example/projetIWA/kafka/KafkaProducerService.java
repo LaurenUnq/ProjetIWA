@@ -17,6 +17,10 @@ public class KafkaProducerService {
     private KafkaTemplate<String, UserLocalisation> kafkaTemplate;
 
 
+    /**
+     * Save user's location in kafka db
+     * @param userLocalisation - the user's location to save
+     */
     public void saveCreateUserLog(UserLocalisation userLocalisation)
     {
         logger.info(String.format("User location created -> %s", userLocalisation));
