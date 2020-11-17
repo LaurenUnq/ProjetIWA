@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.example.projetIWA.models.User;
-import com.example.projetIWA.repositories.UserRepository;
+import com.example.projetIWA.services.UsersServices;
 import org.keycloak.KeycloakPrincipal;
 import org.keycloak.KeycloakSecurityContext;
 import org.keycloak.adapters.RefreshableKeycloakSecurityContext;
@@ -21,10 +21,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.server.ResponseStatusException;
 
 @Controller
-public class CustomUserAttrController {
+public class UserAccountController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UsersServices userServices;
 
     @GetMapping("/userAccount")
     public String getUserInfo(Model model) {
@@ -45,11 +45,11 @@ public class CustomUserAttrController {
             //Recuperer l'id du user actuel
             String userId = token.getSubject();
 
-            if(!userRepository.findById(userId).isPresent()) {
+            if(userServices.findById(userId) == null) {
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+userId+" not found");
             }
             else{
-                User session = userRepository.findById(userId).get();
+                User session = userServices.findById(userId);
                 if(session != null){
                     model.addAttribute("firstName", session.getFirst_name());
                     model.addAttribute("lastName", session.getLast_name());

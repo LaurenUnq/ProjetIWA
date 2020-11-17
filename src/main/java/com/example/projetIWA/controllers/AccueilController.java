@@ -1,7 +1,7 @@
 package com.example.projetIWA.controllers;
 
 import com.example.projetIWA.models.User;
-import com.example.projetIWA.repositories.UserRepository;
+import com.example.projetIWA.services.UsersServices;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,10 +11,10 @@ import java.security.Principal;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Controller
-public class WebController {
+public class AccueilController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UsersServices usersServices;
 
     @GetMapping(path = "/")
     public String index() {
@@ -24,7 +24,7 @@ public class WebController {
     @GetMapping(path = "/users")
     public String customers(Principal principal, Model model) {
         //addUsers();
-        Iterable<User> users = userRepository.findAll();
+        Iterable<User> users = usersServices.findAll();
         model.addAttribute("users", users);
         model.addAttribute("username", principal.getName());
         return "customers";
@@ -38,21 +38,21 @@ public class WebController {
         user1.setLast_name("Lastname1");
         user1.setUsername("username1");
         //user1.setPassword("pass1");
-        userRepository.save(user1);
+        usersServices.save(user1);
 
         User user2 = new User();
         user2.setFirst_name("firstname2");
         user2.setLast_name("Lastname2");
         user2.setUsername("username2");
         //user2.setPassword("pass2");
-        userRepository.save(user2);
+        usersServices.save(user2);
 
         User user3 = new User();
         user3.setFirst_name("firstname3");
         user3.setLast_name("Lastname3");
         user3.setUsername("username3");
         //user3.setPassword("pass3");
-        userRepository.save(user3);
+        usersServices.save(user3);
 
     }
 }

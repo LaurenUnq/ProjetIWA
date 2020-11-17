@@ -12,12 +12,16 @@
         Welcome to the User info test page !!
     </h3>
     <ul>
-        <li>First Name : <span th:text="${firstName}">--name--</span>.</li>
-        <li>Last Name : <span th:text="${lastName}">--name--</span>.</li>
-        <li>Email : <span th:text="${email}">--name--</span>.</li>
+        <li>First Name : <span th:text="${firstName}">--firstName--</span>.</li>
+        <li>Last Name : <span th:text="${lastName}">--lastName--</span>.</li>
+        <li>Email : <span th:text="${email}">--Email--</span>.</li>
+        <li>Username : <span th:text="${username}">--Username--</span>.</li>
     </ul>
 
-    <a href="/users">Liste des users </a>
+    <h1> Modifier son compte :</h1>
+    <a href="http://localhost:8180/auth/realms/projetIWA/account/">EDIT ACCOUNT</a>
+
+    <a href="/doLogout">Logout</a>
 </div>
 </body>
 </html>

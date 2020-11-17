@@ -5,6 +5,8 @@ import com.example.projetIWA.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UsersServices {
 
@@ -28,4 +30,8 @@ public class UsersServices {
     public User findById(String userId) {
         return userRepository.findById(userId).get();
     }
+
+    public List<User> findAll() { return userRepository.findAll();}
+
+    public void save(User user){ userRepository.save(user); }
 }
