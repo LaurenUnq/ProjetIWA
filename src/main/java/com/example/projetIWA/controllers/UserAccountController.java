@@ -54,15 +54,12 @@ public class CustomUserAttrController {
                     model.addAttribute("firstName", session.getFirst_name());
                     model.addAttribute("lastName", session.getLast_name());
                     model.addAttribute("email", session.getEmail());
+                    model.addAttribute("username", session.getUsername());
                 }
 
             }
 
         }
-
-
-
-        model.addAttribute("username", principal.getName());
 
 
         return "userInfo";
