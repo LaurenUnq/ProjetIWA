@@ -4,3 +4,7 @@ com/example/projetIWA/ProjetIwaApplicationTests.java
  com.example.projetIWA.ProjetIwaApplicationTests
 com/example/projetIWA/notification/NotificationServiceTest.java
  com.example.projetIWA.notification.NotificationServiceTest
+com/example/projetIWA/User/UserControllerTest.java
+ com.example.projetIWA.User.UserControllerTest
+com/example/projetIWA/User/UserServiceTest.java
+ com.example.projetIWA.User.UserServiceTest

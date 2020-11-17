@@ -21,6 +21,7 @@ public class AccueilController {
         return "external";
     }
 
+    /*
     @GetMapping(path = "/users")
     public String customers(Principal principal, Model model) {
         //addUsers();
@@ -29,7 +30,7 @@ public class AccueilController {
         model.addAttribute("username", principal.getName());
         return "customers";
     }
-
+*/
     // add customers for demonstration
     public void addUsers() {
 

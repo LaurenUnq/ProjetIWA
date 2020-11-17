@@ -45,7 +45,7 @@ public class UserAccountController {
             //Recuperer l'id du user actuel
             String userId = token.getSubject();
 
-            if(userServices.findById(userId) == null) {
+            if(!userServices.userExist(userId)) {
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+userId+" not found");
             }
             else{
