@@ -1,0 +1,11 @@
+user_entity:
+  - id: "21590ad6-2296-447e-b4f3-cd6e7825ef8c"
+    username: "hugo.brando"
+    first_name: "Hugo"
+    last_name: "Brando"
+    email: "hb@gmail.com"
+  - id: "e9f7b368-f3ff-46d9-9d46-b60fabafedb8"
+    username: "lauren.unquera"
+    first_name: "Lauren"
+    last_name: "Unquera"
+    email: "lu@gmail.com"
