@@ -34,7 +34,7 @@ import static org.hamcrest.Matchers.*;
 
 @WebMvcTest(ProjetIwaApplication.class)
 @AutoConfigureMockMvc(addFilters = false)
-public class git UserControllerTest {
+public class UserControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
