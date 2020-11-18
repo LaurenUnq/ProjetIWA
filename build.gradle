@@ -26,11 +26,13 @@ dependencies {
 	compile group: 'org.keycloak', name: 'keycloak-admin-client', version: '11.0.3'
 	compile group: 'org.keycloak', name: 'keycloak-core', version: '11.0.3'
 
-	//Securité
+	//Securité & test
 	implementation('org.springframework.security:spring-security-taglibs')
 	implementation('org.springframework.boot:spring-boot-starter-security')
 	testImplementation('org.springframework.security:spring-security-test')
 	providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
+	compile group: 'org.scala-js', name: 'scalajs-junit-test-runtime_2.13', version: '1.3.1'
+
 
 
 	//Envoi de mail
