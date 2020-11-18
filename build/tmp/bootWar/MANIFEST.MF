@@ -1,2 +1,7 @@
 Manifest-Version: 1.0
+Start-Class: com.example.projetIWA.ProjetIwaApplication
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Spring-Boot-Version: 2.3.4.RELEASE
+Main-Class: org.springframework.boot.loader.WarLauncher
 

@@ -1,7 +1,7 @@
-com/example/projetIWA/AdminKeycloak.java
- com.example.projetIWA.AdminKeycloak
-com/example/projetIWA/kafka/KafkaTopicConfig.java
- com.example.projetIWA.kafka.KafkaTopicConfig
+com/example/projetIWA/controllers/LocationsViewController.java
+ com.example.projetIWA.controllers.LocationsViewController
+com/example/projetIWA/controllers/UserAccountController.java
+ com.example.projetIWA.controllers.UserAccountController
 com/example/projetIWA/controllers/NotificationsController.java
  com.example.projetIWA.controllers.NotificationsController
 com/example/projetIWA/ProjetIwaApplication.java
@@ -24,8 +24,8 @@ com/example/projetIWA/models/User.java
  com.example.projetIWA.models.User
 com/example/projetIWA/kafka/KafkaProducerConfig.java
  com.example.projetIWA.kafka.KafkaProducerConfig
-com/example/projetIWA/controllers/HomeController.java
- com.example.projetIWA.controllers.HomeController
+com/example/projetIWA/controllers/AccueilController.java
+ com.example.projetIWA.controllers.AccueilController
 com/example/projetIWA/controllers/UsersController.java
  com.example.projetIWA.controllers.UsersController
 com/example/projetIWA/services/NotificationsService.java
@@ -34,25 +34,25 @@ com/example/projetIWA/models/VerificationToken.java
  com.example.projetIWA.models.VerificationToken
 com/example/projetIWA/repositories/NotificationRepository.java
  com.example.projetIWA.repositories.NotificationRepository
-com/example/projetIWA/models/Location.java
- com.example.projetIWA.models.Location
+com/example/projetIWA/controllers/NotificationViewController.java
+ com.example.projetIWA.controllers.NotificationViewController
 com/example/projetIWA/repositories/LocationRepository.java
  com.example.projetIWA.repositories.LocationRepository
-com/example/projetIWA/repositories/UserRepository.java
- com.example.projetIWA.repositories.UserRepository
+com/example/projetIWA/services/UsersServices.java
+ com.example.projetIWA.services.UsersServices
 com/example/projetIWA/services/LocationsService.java
  com.example.projetIWA.services.LocationsService
 com/example/projetIWA/AdminTokenKeycloak.java
  com.example.projetIWA.AdminTokenKeycloak
 com/example/projetIWA/kafka/KafkaConsumerService.java
  com.example.projetIWA.kafka.KafkaConsumerService
-com/example/projetIWA/controllers/LocationsViewController.java
- com.example.projetIWA.controllers.LocationsViewController
-com/example/projetIWA/controllers/UserAccountController.java
- com.example.projetIWA.controllers.UserAccountController
-com/example/projetIWA/controllers/NotificationViewController.java
- com.example.projetIWA.controllers.NotificationViewController
-com/example/projetIWA/controllers/AccueilController.java
- com.example.projetIWA.controllers.AccueilController
-com/example/projetIWA/services/UsersServices.java
- com.example.projetIWA.services.UsersServices
+com/example/projetIWA/repositories/UserRepository.java
+ com.example.projetIWA.repositories.UserRepository
+com/example/projetIWA/controllers/HomeController.java
+ com.example.projetIWA.controllers.HomeController
+com/example/projetIWA/models/Location.java
+ com.example.projetIWA.models.Location
+com/example/projetIWA/kafka/KafkaTopicConfig.java
+ com.example.projetIWA.kafka.KafkaTopicConfig
+com/example/projetIWA/AdminKeycloak.java
+ com.example.projetIWA.AdminKeycloak

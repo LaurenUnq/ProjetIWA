@@ -2,14 +2,11 @@ com/example/projetIWA/notification/NotificationControllerTest.java
  com.example.projetIWA.notification.NotificationControllerTest
 com/example/projetIWA/ProjetIwaApplicationTests.java
  com.example.projetIWA.ProjetIwaApplicationTests
-com/example/projetIWA/notification/NotificationServiceTest.java
- com.example.projetIWA.notification.NotificationServiceTest
-<<<<<<< HEAD
 com/example/projetIWA/notification/NotificationRepositoryTest.java
  com.example.projetIWA.notification.NotificationRepositoryTest
-=======
+com/example/projetIWA/notification/NotificationServiceTest.java
+ com.example.projetIWA.notification.NotificationServiceTest
 com/example/projetIWA/User/UserControllerTest.java
  com.example.projetIWA.User.UserControllerTest
 com/example/projetIWA/User/UserServiceTest.java
  com.example.projetIWA.User.UserServiceTest
->>>>>>> 9ef5b9539b5d43a70c25fed779a980ce2596dc6d
