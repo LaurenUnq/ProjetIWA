@@ -117,6 +117,9 @@ public class NotificationControllerTest {
                 .andExpect(jsonPath("$", is(2)));
     }
 
+    /**
+     * To send json on body request
+     */
     @Autowired private ObjectMapper mapper;
 
     @Test
