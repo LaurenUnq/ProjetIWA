@@ -15,6 +15,7 @@ import org.springframework.security.core.authority.mapping.SimpleAuthorityMapper
 import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.web.authentication.session.RegisterSessionAuthenticationStrategy;
 import org.springframework.security.web.authentication.session.SessionAuthenticationStrategy;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -44,11 +45,20 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
     protected void configure(final HttpSecurity httpSecurity) throws Exception {
         super.configure(httpSecurity);
         httpSecurity.authorizeRequests()
-                .antMatchers("/users*").permitAll()
-                .antMatchers("/userAccount*").permitAll()
-                .antMatchers("/users*", "/userAccount*")
+                //.antMatchers("/users*").permitAll()
+                //.antMatchers("/userAccount*").permitAll()
+                .antMatchers("/users*", "/userAccount*", "/accountModification*")
                 .hasRole("user")
                 .anyRequest()
+                .permitAll()
+                .and()
+                .logout()
+                .logoutSuccessUrl("/logoutSuccess")
+                .logoutRequestMatcher(
+                        new AntPathRequestMatcher("/doLogout","GET")
+                )
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID")
                 .permitAll();
     }
 }

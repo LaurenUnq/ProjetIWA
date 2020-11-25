@@ -1,14 +1,20 @@
-com/example/projetIWA/User/UserControllerTest.java
- com.example.projetIWA.User.UserControllerTest
+com/example/projetIWA/notification/NotificationControllerTest.java
+ com.example.projetIWA.notification.NotificationControllerTest
+com/example/projetIWA/User/UserIntegrationTest.java
+ com.example.projetIWA.User.UserIntegrationTest
 com/example/projetIWA/ProjetIwaApplicationTests.java
  com.example.projetIWA.ProjetIwaApplicationTests
+com/example/projetIWA/User/UserAccountControllerTest.java
+ com.example.projetIWA.User.UserAccountControllerTest
 com/example/projetIWA/notification/NotificationRepositoryTest.java
  com.example.projetIWA.notification.NotificationRepositoryTest
 com/example/projetIWA/notification/NotificationServiceTest.java
  com.example.projetIWA.notification.NotificationServiceTest
-com/example/projetIWA/User/UserServiceTest.java
- com.example.projetIWA.User.UserServiceTest
-com/example/projetIWA/notification/NotificationControllerTest.java
- com.example.projetIWA.notification.NotificationControllerTest
+com/example/projetIWA/User/KeycloakContextTest.java
+ com.example.projetIWA.User.KeycloakContextTest
 com/example/projetIWA/notification/NotificationIntegrationTest.java
  com.example.projetIWA.notification.NotificationIntegrationTest
+com/example/projetIWA/User/UserRepositoryTest.java
+ com.example.projetIWA.User.UserRepositoryTest
+com/example/projetIWA/User/UserServiceTest.java
+ com.example.projetIWA.User.UserServiceTest
