@@ -3,6 +3,7 @@ package com.example.projetIWA.controllers;
 import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.models.Location;
 import com.example.projetIWA.services.LocationsService;
+import com.example.projetIWA.services.NotificationsService;
 import com.example.projetIWA.services.UsersServices;
 import org.keycloak.KeycloakPrincipal;
 import org.keycloak.KeycloakSecurityContext;
@@ -31,6 +32,9 @@ public class LocationsViewController {
     @Autowired
     private AuthService authService;
 
+    @Autowired
+    private NotificationsService notificationsService;
+
     /**
      * show the locationView for user connected
      * @param model
@@ -39,6 +43,9 @@ public class LocationsViewController {
     @GetMapping("/locationView")
     public String getUserInfo(Model model) {
         model.addAttribute("location", new Location());
+        String userId = this.authService.getUserIdByContext();
+        long nbNotificationNotViewed = notificationsService.getNumberNotificationNotViewedByUserId(userId);
+        model.addAttribute("nbNotificationNotViewed", nbNotificationNotViewed);
         return "location";
     }
 

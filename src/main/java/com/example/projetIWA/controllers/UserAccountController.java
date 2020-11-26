@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.models.User;
+import com.example.projetIWA.services.NotificationsService;
 import com.example.projetIWA.services.UsersServices;
 import org.keycloak.KeycloakPrincipal;
 import org.keycloak.KeycloakSecurityContext;
@@ -30,6 +31,9 @@ public class UserAccountController {
     @Autowired
     private AuthService authService;
 
+    @Autowired
+    private NotificationsService notificationsService;
+
     @GetMapping("/userAccount")
     public String getUserInfo(Model model) {
 
@@ -44,6 +48,8 @@ public class UserAccountController {
                 model.addAttribute("lastName", session.getLast_name());
                 model.addAttribute("email", session.getEmail());
                 model.addAttribute("username", session.getUsername());
+                long nbNotificationNotViewed = notificationsService.getNumberNotificationNotViewedByUserId(userId);
+                model.addAttribute("nbNotificationNotViewed", nbNotificationNotViewed);
             }
 
         }

@@ -49,7 +49,9 @@ public class NotificationViewController {
         }
         else{
             List<Notification> notifications = notificationsService.getAllNotificationByUserId(userId);
+            long nbNotificationNotViewed = notificationsService.getNumberNotificationNotViewedByUserId(userId);
             model.addAttribute("notifications", notifications);
+            model.addAttribute("nbNotificationNotViewed", nbNotificationNotViewed);
         }
 
         return "notification";
@@ -70,7 +72,9 @@ public class NotificationViewController {
             User user = this.usersServices.findById(userId);
             notificationsService.createNotificationsFromPositiveUser(user);
             List<Notification> notifications = notificationsService.getAllNotificationByUserId(userId);
+            long nbNotificationNotViewed = notificationsService.getNumberNotificationNotViewedByUserId(userId);
             model.addAttribute("notifications", notifications);
+            model.addAttribute("nbNotificationNotViewed", nbNotificationNotViewed);
         }
         return "notification";
     }
