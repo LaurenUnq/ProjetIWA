@@ -1,4 +1,5 @@
 package com.example.projetIWA.User;
+import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.controllers.NotificationsController;
 import com.example.projetIWA.controllers.UserAccountController;
 import com.example.projetIWA.services.NotificationsService;
@@ -26,6 +27,12 @@ public class UserAccountControllerTest {
 
     @MockBean
     private UsersServices usersServices;
+
+    @MockBean
+    private AuthService authService;
+
+    @MockBean
+    private NotificationsService notificationsService;
 
     @Test
     void userAccount() throws Exception {

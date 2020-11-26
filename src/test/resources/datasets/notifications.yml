@@ -1,9 +1,9 @@
 notifications:
-  - notification_id: 1
+  - notification_id: 10
     description: "Contact cases"
     viewed: true
     notification_date: 2020-11-14T16:55:20
-  - notification_id: 2
+  - notification_id: 20
     description: "Contact cases"
     viewed: false
     notification_date: 2020-11-14T17:05:23

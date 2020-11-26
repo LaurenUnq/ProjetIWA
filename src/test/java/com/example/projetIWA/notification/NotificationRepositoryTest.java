@@ -31,16 +31,17 @@ public class NotificationRepositoryTest {
     public ConnectionHolder getConnectionHolder() {
         return () -> dataSource.getConnection();
     }
+
     @Autowired
     private NotificationRepository repository;
 
     @Test
     @DataSet("notifications.yml")
     void testFindById() {
-        long id = 1;
+        long id = 10;
         Optional<Notification> notification = repository.findById(id);
         Assertions.assertEquals(true, notification.isPresent(), "Expected, notification should be found");
-        Assertions.assertEquals(1, notification.get().getNotification_id(),"Expected notification id is 1");
+        Assertions.assertEquals(10, notification.get().getNotification_id(),"Expected notification id is 10");
         Assertions.assertEquals("Contact cases", notification.get().getDescription(),"Expected description is \"Contact cases\"");
         Assertions.assertEquals(true, notification.get().getViewed(),"Expected view is true");
     }
@@ -55,9 +56,10 @@ public class NotificationRepositoryTest {
         notification.setViewed(false);
 
         // test
+        long nbNotification = repository.findAll().size();
         Notification notificationCreate = repository.saveAndFlush(notification);
 
-        Assertions.assertEquals(1, notificationCreate.getNotification_id(),"Expected notification id is 1");
+        Assertions.assertEquals(nbNotification + 1, notificationCreate.getNotification_id(),"Expected notification id is 1");
         Assertions.assertEquals("test cas contact", notificationCreate.getDescription(),"Expected description is \"test cas contact\"");
         Assertions.assertEquals(false, notificationCreate.getViewed(),"Expected view is false");
         Assertions.assertEquals(date, notification.getNotification_date(),"Expected date not good");

@@ -1,8 +1,11 @@
 package com.example.projetIWA.location;
 
+import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.controllers.LocationsViewController;
 import com.example.projetIWA.services.LocationsService;
+import com.example.projetIWA.services.NotificationsService;
 import com.example.projetIWA.services.UsersServices;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;
 import org.keycloak.adapters.springsecurity.KeycloakSecurityComponents;
@@ -29,9 +32,16 @@ public class LocationViewControllerTest {
     private LocationsService locationsService;
 
     @MockBean
+    private AuthService authService;
+
+    @MockBean
+    private NotificationsService notificationsService;
+
+    @MockBean
     private UsersServices usersServices;
 
     @Test
+    @DisplayName("GET /notificationView REDIRECT")
     void userAccount() throws Exception {
         mockMvc.perform(get("/notificationView"))
                 .andExpect(status().is3xxRedirection());
