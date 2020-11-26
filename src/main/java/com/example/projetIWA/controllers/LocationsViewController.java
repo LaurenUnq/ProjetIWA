@@ -1,5 +1,6 @@
 package com.example.projetIWA.controllers;
 
+import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.models.Location;
 import com.example.projetIWA.services.LocationsService;
 import com.example.projetIWA.services.UsersServices;
@@ -27,6 +28,9 @@ public class LocationsViewController {
     @Autowired
     private UsersServices usersServices;
 
+    @Autowired
+    private AuthService authService;
+
     /**
      * show the locationView for user connected
      * @param model
@@ -46,27 +50,12 @@ public class LocationsViewController {
     @PostMapping("/locationView")
     @ResponseStatus(HttpStatus.CREATED)
     public String create(@ModelAttribute Location location) {
-        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext()
-                .getAuthentication();
-
-        final Principal principal = (Principal) authentication.getPrincipal();
-
-        if (principal instanceof KeycloakPrincipal) {
-
-            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
-            IDToken token = kPrincipal.getKeycloakSecurityContext()
-                    .getIdToken();
-
-            Map<String, Object> customClaims = token.getOtherClaims();
-            //Recuperer l'id du user actuel
-            String userId = token.getSubject();
-
-            if(!usersServices.userExist(userId)) {
-                throw new ResponseStatusException(HttpStatus.FORBIDDEN, "User with ID "+userId+" not found");
-            }
-            else{
-                this.locationsService.create(location, userId);
-            }
+        String userId = this.authService.getUserIdByContext();
+        if(!usersServices.userExist(userId)){
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "User with ID "+userId+" not found");
+        }
+        else{
+            this.locationsService.create(location, userId);
         }
         return "location";
     }

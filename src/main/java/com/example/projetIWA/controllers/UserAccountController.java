@@ -4,6 +4,7 @@ import java.security.Principal;
 import java.util.Map;
 import java.util.Optional;
 
+import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.models.User;
 import com.example.projetIWA.services.UsersServices;
 import org.keycloak.KeycloakPrincipal;
@@ -24,39 +25,25 @@ import org.springframework.web.server.ResponseStatusException;
 public class UserAccountController {
 
     @Autowired
-    private UsersServices userServices;
+    private UsersServices usersServices;
+
+    @Autowired
+    private AuthService authService;
 
     @GetMapping("/userAccount")
     public String getUserInfo(Model model) {
 
-        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext()
-                .getAuthentication();
-
-        final Principal principal = (Principal) authentication.getPrincipal();
-
-
-        if (principal instanceof KeycloakPrincipal) {
-
-            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
-            IDToken token = kPrincipal.getKeycloakSecurityContext()
-                    .getIdToken();
-
-            Map<String, Object> customClaims = token.getOtherClaims();
-            //Recuperer l'id du user actuel
-            String userId = token.getSubject();
-
-            if(!userServices.userExist(userId)) {
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+userId+" not found");
-            }
-            else{
-                User session = userServices.findById(userId);
-                if(session != null){
-                    model.addAttribute("firstName", session.getFirst_name());
-                    model.addAttribute("lastName", session.getLast_name());
-                    model.addAttribute("email", session.getEmail());
-                    model.addAttribute("username", session.getUsername());
-                }
-
+        String userId = this.authService.getUserIdByContext();
+        if(!usersServices.userExist(userId)){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+userId+" not found");
+        }
+        else{
+            User session = usersServices.findById(userId);
+            if(session != null){
+                model.addAttribute("firstName", session.getFirst_name());
+                model.addAttribute("lastName", session.getLast_name());
+                model.addAttribute("email", session.getEmail());
+                model.addAttribute("username", session.getUsername());
             }
 
         }

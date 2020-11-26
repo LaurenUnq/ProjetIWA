@@ -1,5 +1,6 @@
 package com.example.projetIWA.controllers;
 
+import com.example.projetIWA.auth.AuthService;
 import com.example.projetIWA.models.Notification;
 import com.example.projetIWA.models.User;
 import com.example.projetIWA.services.NotificationsService;
@@ -31,6 +32,9 @@ public class NotificationViewController {
     @Autowired
     private UsersServices usersServices;
 
+    @Autowired
+    private AuthService authService;
+
     /**
      * show the notifications view for user connected
      * @param model
@@ -39,28 +43,13 @@ public class NotificationViewController {
     @GetMapping("/notificationView")
     public String getUserInfo(Model model) {
 
-        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext()
-                .getAuthentication();
-
-        final Principal principal = (Principal) authentication.getPrincipal();
-
-        if (principal instanceof KeycloakPrincipal) {
-
-            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
-            IDToken token = kPrincipal.getKeycloakSecurityContext()
-                    .getIdToken();
-
-            Map<String, Object> customClaims = token.getOtherClaims();
-            //Recuperer l'id du user actuel
-            String userId = token.getSubject();
-
-            if(!usersServices.userExist(userId)) {
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+userId+" not found");
-            }
-            else{
-                List<Notification> notifications = notificationsService.getAllNotificationByUserId(userId);
-                model.addAttribute("notifications", notifications);
-            }
+        String userId = this.authService.getUserIdByContext();
+        if(!usersServices.userExist(userId)){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User with ID "+userId+" not found");
+        }
+        else{
+            List<Notification> notifications = notificationsService.getAllNotificationByUserId(userId);
+            model.addAttribute("notifications", notifications);
         }
 
         return "notification";
@@ -72,29 +61,16 @@ public class NotificationViewController {
      */
     @PostMapping("/notificationView")
     @ResponseStatus(HttpStatus.CREATED)
-    public String create() {
-        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext()
-                .getAuthentication();
-
-        final Principal principal = (Principal) authentication.getPrincipal();
-
-        if (principal instanceof KeycloakPrincipal) {
-
-            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
-            IDToken token = kPrincipal.getKeycloakSecurityContext()
-                    .getIdToken();
-
-            Map<String, Object> customClaims = token.getOtherClaims();
-            //Recuperer l'id du user actuel
-            String userId = token.getSubject();
-
-            if(!usersServices.userExist(userId)) {
-                throw new ResponseStatusException(HttpStatus.FORBIDDEN, "User with ID "+userId+" not found");
-            }
-            else{
-                User user = this.usersServices.findById(userId);
-                notificationsService.createNotificationsFromPositiveUser(user);
-            }
+    public String create(Model model) {
+        String userId = this.authService.getUserIdByContext();
+        if(!usersServices.userExist(userId)){
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "User with ID "+userId+" not found");
+        }
+        else{
+            User user = this.usersServices.findById(userId);
+            notificationsService.createNotificationsFromPositiveUser(user);
+            List<Notification> notifications = notificationsService.getAllNotificationByUserId(userId);
+            model.addAttribute("notifications", notifications);
         }
         return "notification";
     }
