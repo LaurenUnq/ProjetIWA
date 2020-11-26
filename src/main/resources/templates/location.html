@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:include="layout :: headFragment">
     <meta charset="UTF-8">
     <title>Location</title>
 </head>
 <body>
-    <a href="/userAccount">Mes informations </a>
-    <a href="/notificationView">Gestion des notifications </a>
+    <div th:include="layout :: headerFragment"></div>
 
     <h2>Envoyer sa localisation</h2>
 

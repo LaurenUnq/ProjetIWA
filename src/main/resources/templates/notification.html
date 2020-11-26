@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:include="layout :: headFragment">
     <meta charset="UTF-8">
     <title>Notifications</title>
 </head>
 <body>
 
-    <a href="/userAccount">Mes informations </a>
-    <a href="/locationView">Envoyer sa localisation </a>
+    <div th:include="layout :: headerFragment"></div>
 
-    <form action="#" th:action="@{/notificationView}"method="post">
-        <input type="submit" value="Je suis positif au COVID-19"/>
-    </form>
+    <div>
+        <form action="#" th:action="@{/notificationView}"method="post">
+            <input type="submit" value="Je suis positif au COVID-19"/>
+        </form>
+    </div>
+
 
     <table class="table table-striped">
         <thead>

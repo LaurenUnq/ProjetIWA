@@ -15,7 +15,6 @@ public class User {
 
     @Id
     @NotNull
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Column(unique=true)
@@ -26,9 +25,7 @@ public class User {
     private String last_name;
 
     private String email;
-/*
-    private String password;
-*/
+
     @ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(name="user_locations",
             joinColumns = @JoinColumn(name="user_id"),
@@ -93,15 +90,7 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-/*
-    public String getPhone_number() {
-        return phone_number;
-    }
 
-    public void setPhone_number(String phone_number) {
-        this.phone_number = phone_number;
-    }
-*/
     public String getUsername() {
         return username;
     }
@@ -110,14 +99,5 @@ public class User {
         this.username = username;
     }
 
-    /*
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-*/
 
 }

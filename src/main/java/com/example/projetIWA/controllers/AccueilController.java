@@ -21,39 +21,4 @@ public class AccueilController {
         return "external";
     }
 
-    /*
-    @GetMapping(path = "/users")
-    public String customers(Principal principal, Model model) {
-        //addUsers();
-        Iterable<User> users = usersServices.findAll();
-        model.addAttribute("users", users);
-        model.addAttribute("username", principal.getName());
-        return "customers";
-    }
-*/
-    // add customers for demonstration
-    public void addUsers() {
-
-        User user1 = new User();
-        user1.setFirst_name("firstname1");
-        user1.setLast_name("Lastname1");
-        user1.setUsername("username1");
-        //user1.setPassword("pass1");
-        usersServices.save(user1);
-
-        User user2 = new User();
-        user2.setFirst_name("firstname2");
-        user2.setLast_name("Lastname2");
-        user2.setUsername("username2");
-        //user2.setPassword("pass2");
-        usersServices.save(user2);
-
-        User user3 = new User();
-        user3.setFirst_name("firstname3");
-        user3.setLast_name("Lastname3");
-        user3.setUsername("username3");
-        //user3.setPassword("pass3");
-        usersServices.save(user3);
-
-    }
 }
