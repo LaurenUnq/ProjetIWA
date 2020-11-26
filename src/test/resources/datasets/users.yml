@@ -9,3 +9,28 @@ user_entity:
     first_name: "Lauren"
     last_name: "Unquera"
     email: "lu@gmail.com"
+  - id: "e9f8b368-f3tf-46d9-9d46-b60frbafedb8"
+    username: "thomas.cormier"
+    first_name: "Thomas"
+    last_name: "Cormier"
+    email: "tc@gmail.com"
+locations:
+  - location_id: 1
+    latitude: 0.5236548
+    longitude: 0.584698
+    location_date: 2020-11-14T16:52:20
+  - location_id: 2
+    latitude: 0.5236558
+    longitude: 0.584688
+    location_date: 2020-11-14T16:55:20
+  - location_id: 3
+    latitude: 0.6236548
+    longitude: 0.584698
+    location_date: 2020-11-14T17:55:20
+user_locations:
+  - user_id: "21590ad6-2296-447e-b4f3-cd6e7825ef8c"
+    location_id: 1
+  - user_id: "e9f7b368-f3ff-46d9-9d46-b60fabafedb8"
+    location_id: 3
+  - user_id: "e9f8b368-f3tf-46d9-9d46-b60frbafedb8"
+    location_id: 3

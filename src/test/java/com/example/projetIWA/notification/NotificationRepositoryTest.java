@@ -44,4 +44,22 @@ public class NotificationRepositoryTest {
         Assertions.assertEquals("Contact cases", notification.get().getDescription(),"Expected description is \"Contact cases\"");
         Assertions.assertEquals(true, notification.get().getViewed(),"Expected view is true");
     }
+
+    @Test
+    void testSaveAndFlush() {
+        // Setup
+        Date date = new Date();
+        Notification notification = new Notification();
+        notification.setDescription("test cas contact");
+        notification.setNotification_date(date);
+        notification.setViewed(false);
+
+        // test
+        Notification notificationCreate = repository.saveAndFlush(notification);
+
+        Assertions.assertEquals(1, notificationCreate.getNotification_id(),"Expected notification id is 1");
+        Assertions.assertEquals("test cas contact", notificationCreate.getDescription(),"Expected description is \"test cas contact\"");
+        Assertions.assertEquals(false, notificationCreate.getViewed(),"Expected view is false");
+        Assertions.assertEquals(date, notification.getNotification_date(),"Expected date not good");
+    }
 }

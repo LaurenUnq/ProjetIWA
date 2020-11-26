@@ -66,7 +66,7 @@ public class NotificationsService {
 
             // pour toutes ces localiations chercher les cas contact
             List<User> allContactCases = new ArrayList<User>();
-            Date limitDate = new Date(new Date().getTime() - 604800000L); // - 7 jours en milisecondes
+            Date limitDate = new Date(new Date().getTime() - 604800000); // - 7 jours en milisecondes
             allLocations.forEach(location -> {
                 if(location.getLocation_date().after(limitDate)) {
                     List<User> allUsers = this.userRepository.findAllContactCase(

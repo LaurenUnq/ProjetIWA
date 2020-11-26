@@ -17,6 +17,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -53,7 +54,7 @@ public class UserRepositoryTest {
     void testFindAll() {
         List<User> users2 = repository.findAll();
 
-        Assertions.assertEquals(2, users2.size(), "Expected, user list size should be 2");
+        Assertions.assertEquals(3, users2.size(), "Expected, user list size should be 2");
 
         Assertions.assertEquals("21590ad6-2296-447e-b4f3-cd6e7825ef8c", users2.get(0).getUser_id(), "Expected, user id should be 21590ad6-2296-447e-b4f3-cd6e7825ef8c");
         Assertions.assertEquals("hugo.brando", users2.get(0).getUsername(),"Expected username user 1 is \"hugo.brando\"");
@@ -87,6 +88,21 @@ public class UserRepositoryTest {
         Assertions.assertEquals("Lauren", user.get().getFirst_name(),"Expected firstname is Lauren");
         Assertions.assertEquals("Unquera", user.get().getLast_name(),"Expected lastname is Unquera");
         Assertions.assertEquals("lu@gmail.com", user.get().getEmail(),"Expected email is lu@gmail.com");
+    }
+
+    @Test
+    @DataSet("users.yml")
+    void testFindAllContactCase() {
+        List<User> users = repository.findAllContactCase(
+                0.5237048,
+                0.5236048,
+                0.584748,
+                0.584148,
+                new Date(2020,11,14,17,07,20),
+                new Date(2020,11,14,16,37,20),
+                "21590ad6-2296-d-b4f3-cd6e7825ef8c");
+
+        Assertions.assertEquals(0, users.size(), "Expected, one user should be found");
     }
 
 }
