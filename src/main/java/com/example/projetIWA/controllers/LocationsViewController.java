@@ -56,13 +56,15 @@ public class LocationsViewController {
      */
     @PostMapping("/locationView")
     @ResponseStatus(HttpStatus.CREATED)
-    public String create(@ModelAttribute Location location) {
+    public String create(@ModelAttribute Location location, Model model) {
         String userId = this.authService.getUserIdByContext();
         if(!usersServices.userExist(userId)){
             throw new ResponseStatusException(HttpStatus.FORBIDDEN, "User with ID "+userId+" not found");
         }
         else{
             this.locationsService.create(location, userId);
+            long nbNotificationNotViewed = notificationsService.getNumberNotificationNotViewedByUserId(userId);
+            model.addAttribute("nbNotificationNotViewed", nbNotificationNotViewed);
         }
         return "location";
     }
